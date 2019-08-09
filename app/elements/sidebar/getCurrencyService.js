@@ -2,9 +2,11 @@ sidebarLeftModule.factory("getCurrencyService",
   function ($http) {
     return {
       getMoney: function () {
-        return new Promise((resolve, reject) => {
+        return new Promise( (resolve, reject) => {
+          
+          //first call on page load
           $http.get("https://api.exchangeratesapi.io/latest")
-            .then((response) => {
+            .then( (response) => {
               var currencies = {};
               currencies.EUR = response.data.rates.RON
               currencies.USD = (response.data.rates.RON / response.data.rates.USD)
@@ -14,8 +16,9 @@ sidebarLeftModule.factory("getCurrencyService",
             }, (reason) => {
               //console.log("error")
               reject(reason)
-            })
-        })
+            })   
+          }
+        )
+        }
       }
-    }
-  })
+    })

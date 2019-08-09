@@ -3,57 +3,49 @@ body {
 }
 
 .mainPages {
-  margin-left:200px
+  margin-left:200px;
+
 }
 
 .sidenav {
   height: 100%;
   width:200px;
-  position: fixed;
-  z-index: 1;
-  top: 50px;
+  position: absolute;
+  z-index: 2;
+  top: 60px;
   left: 0;
   background-color: whitesmoke;
   overflow-x: hidden;
-  padding-top: 20px;
+
 }
 
-.sidenav a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-}
 
-.sidenav a:hover {
-  color: #f1f1f1;
-}
 
-.main {
-  margin-left: 200px; /* Same as the width of the sidenav */
-  font-size: 28px; /* Increased text to enable scrolling */
-  padding: 0px 10px;
-}
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
+
 
 .horizontalnav{
+  margin:0px;
   list-style-type: none;
   background-color: whitesmoke;
-  height:50px;
-  padding: 0;
+  height:60px;
+  overflow: hidden;
 }
 
 .horizontalnavElement{
   display: inline;
-  padding:15px;
-  font-size: 24px;
+  font-size: 180%;
+  padding: 1%;
 }
 
 .currency-offset{
   margin-left: 10px;
+}
+
+.morePage{
+  z-index: 3;
+  position:absolute;
+  background-color: #818181;
+  height:100%;
+  width:100%;
 }

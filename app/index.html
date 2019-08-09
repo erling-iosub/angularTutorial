@@ -8,11 +8,10 @@
 </head>
 
 <body ng-controller="myAppCtrl">
-
-  <navbar-module-directive></navbar-module-directive>
+    <navbar-module-directive></navbar-module-directive>
+  <ng-view> </ng-view>
   <sidebar-left-module-directive></sidebar-left-module-directive>
 
-  <ng-view> </ng-view>
 
   <script src="lib/jquery/dist/jquery.js"></script>
   <script src="lib/angular/angular.js"></script>
@@ -29,6 +28,7 @@
   <script src="elements/sidebar/getWeatherService.js"></script>
   <script src="elements/navbar/navbarModule.js"></script>
   <script src="elements/navbar/navbarModuleDirective.js"></script>
+  <script src="elements/moreButton/moreButtonModule.js"></script>
 
 
   <!--PAGES-->

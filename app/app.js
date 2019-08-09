@@ -4,7 +4,8 @@ var myApp = angular.module("myApp", [
   "navbarModule",
   "httpModule",
   "homeModule",
-  "htmlModule"
+  "htmlModule",
+  "moreButton"
 ]) 
 . config(['$locationProvider', '$routeProvider', 
   function($locationProvider, $routeProvider) {
@@ -14,3 +15,6 @@ var myApp = angular.module("myApp", [
   .controller("myAppCtrl",
     function myAppCtrl($scope) {
     })
+
+
+    ///set PYTHONIOENCODING=UTF-8
