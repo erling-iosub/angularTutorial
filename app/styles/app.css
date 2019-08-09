@@ -2,12 +2,16 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+.mainPages {
+  margin-left:200px
+}
+
 .sidenav {
   height: 100%;
   width:200px;
   position: fixed;
   z-index: 1;
-  top: 0;
+  top: 50px;
   left: 0;
   background-color: whitesmoke;
   overflow-x: hidden;
@@ -46,6 +50,10 @@ body {
 
 .horizontalnavElement{
   display: inline;
-  padding:10px;
+  padding:15px;
   font-size: 24px;
+}
+
+.currency-offset{
+  margin-left: 10px;
 }

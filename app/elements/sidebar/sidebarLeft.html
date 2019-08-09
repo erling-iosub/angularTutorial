@@ -1,0 +1,23 @@
+<div ng-app="sidebarLeftModule" ng-controller="sidebarLeftModuleCtrl"></div>
+    <div class="sidenav" ng-transclude>
+        <div id="day">
+            <h4 style="margin-left:5px;">{{theDay}}, {{clockArr[0]}}:{{clockArr[1]}}</h4>
+            <br>
+        </div>
+
+        <div id="weather">
+
+<!--
+            <a style="color:blue; font-size: 18px;" href="https://darksky.net/poweredby/">Powered by Dark Sky</a>
+-->
+        </div>
+
+        <div id="exchange">
+            <h4 style="margin-left:5px;">Exchange Rates:</h4>
+            <div class="currency-offset" ng-repeat="(key,value) in currencies ">
+                {{key}} = {{value | number:2}} Ron
+            </div>
+
+        </div>
+    </div>
+</div>

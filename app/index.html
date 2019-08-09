@@ -8,15 +8,38 @@
 </head>
 
 <body ng-controller="myAppCtrl">
-  <navbar-directive> </navbar-directive>
-  <sidebar-left-directive> </sidebar-left-directive>
 
+  <navbar-module-directive></navbar-module-directive>
+  <sidebar-left-module-directive></sidebar-left-module-directive>
+
+  <ng-view> </ng-view>
 
   <script src="lib/jquery/dist/jquery.js"></script>
   <script src="lib/angular/angular.js"></script>
   <script src="lib/angular-route/angular-route.js"></script>
 
+  <!--APP-->
   <script src="app.js"></script>
+
+  <!--ELEMENTS-->
+  <script src="elements/sidebar/sidebarLeftModule.js"></script>
+  <script src="elements/sidebar/sidebarLeftModuleDirective.js"></script>
+  <script src="elements/sidebar/getCurrencyService.js"></script>
+  <script src="elements/sidebar/getTimeService.js"></script>
+  <script src="elements/sidebar/getWeatherService.js"></script>
+  <script src="elements/navbar/navbarModule.js"></script>
+  <script src="elements/navbar/navbarModuleDirective.js"></script>
+
+
+  <!--PAGES-->
+  <script src="pages/homeModule.js"></script>
+  <script src="pages/httpModule.js"></script>
+  <script src="pages/htmlModule.js"></script>
+
+
+
+
+
   <script src="lib/bootstrap/dist/js/bootstrap.js"></script>
 </body>
 
