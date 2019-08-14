@@ -8,8 +8,8 @@ sidebarLeftModule.controller("sidebarCtrl",
     getWeatherService.getWeather().then((resolve) => {
       $scope.weather = resolve;
       $scope.date = (Date($scope.weather.timetime).split(" ")[4]).split(":")[0] + ":" +
-                    (Date($scope.weather.timetime).split(" ")[4]).split(":")[1]
-
+        (Date($scope.weather.timetime).split(" ")[4]).split(":")[1]
+        
       $scope.$apply()
 
     })
@@ -31,12 +31,20 @@ sidebarLeftModule.controller("sidebarCtrl",
     setInterval(() => {
       getWeatherService.getWeather().then((resolve) => {
         $scope.weather = resolve;
+
+        $scope.date = (Date($scope.weather.timetime).split(" ")[4]).split(":")[0] + ":" +
+        (Date($scope.weather.timetime).split(" ")[4]).split(":")[1]
         
-        getCurrencyService.getMoney().then((resolve) => {
-          $scope.currencies = resolve;
-        })
-        $scope.$apply()
+        console.log($scope.weather)
+        console.log($scope.date)
       })
+
+      getCurrencyService.getMoney().then((resolve) => {
+        $scope.currencies = resolve;
+        console.log($scope.currencies)
+      })
+      $scope.$apply()
+
     }, 600 * 1000) // 10 minutes
 
   })
