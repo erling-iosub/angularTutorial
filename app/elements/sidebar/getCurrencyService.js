@@ -3,8 +3,6 @@ sidebarLeftModule.factory("getCurrencyService",
     return {
       getMoney: function () {
         return new Promise( (resolve, reject) => {
-          
-          //first call on page load
           $http.get("https://api.exchangeratesapi.io/latest")
             .then( (response) => {
               var currencies = {};
@@ -22,3 +20,5 @@ sidebarLeftModule.factory("getCurrencyService",
         }
       }
     })
+
+   
