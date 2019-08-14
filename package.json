@@ -28,6 +28,8 @@
     "xmlhttprequest": "^1.8.0"
   },
   "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-watch": "^5.0.1",
     "webpack": "^4.39.1",
     "webpack-cli": "^3.3.6"
   }

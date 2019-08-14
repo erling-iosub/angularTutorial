@@ -9,8 +9,7 @@ sidebarLeftModule.controller("sidebarCtrl",
       $scope.weather = resolve;
       $scope.date = (Date($scope.weather.timetime).split(" ")[4]).split(":")[0] + ":" +
                     (Date($scope.weather.timetime).split(" ")[4]).split(":")[1]
-      console.log($scope.weather.time)
-      console.log($scope.date)
+
       $scope.$apply()
 
     })

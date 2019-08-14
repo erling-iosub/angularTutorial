@@ -41,7 +41,6 @@ body {
 .currency-offset{
   margin-left: 10px;
 }
-
 .morePage{
   z-index: 3;
   position:absolute;
@@ -49,3 +48,5 @@ body {
   height:100%;
   width:100%;
 }
+
+
