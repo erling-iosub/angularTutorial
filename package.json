@@ -21,7 +21,7 @@
     "express": "^4.17.1",
     "express-http-proxy": "^1.5.1",
     "fs": "0.0.1-security",
-    "http-proxy": "^1.17.0",
+    "http-proxy": "^1.18.1",
     "jquery": "^3.4.1",
     "python": "0.0.4",
     "request": "^2.88.0",
